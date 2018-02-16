@@ -1,0 +1,4 @@
+This project aims to find all numbers that are perfect squares, and are also perfect squares when each digit is increased by 1.
+For example: 25 is a perfect square, and 36 is also a perfect square. 
+
+Right now it is very slow at finding anything past the 4th result. I would appreciate help making my code run faster. Thanks! 
