@@ -8,17 +8,17 @@ namespace Rooter
     {
         static void Main(string[] args)
         {
-            MainFunction(0, 999999999999999999);
+            FindSquares(0, 999999999999999999); //Find all applicable numbers up to an abritrarily large number
         }
 
-        public static bool IsPerfectSquare(long num)
+        public static bool IsPerfectSquare(long num) //Determines if a number is a perfect square
         {
             double squareRoot = Math.Sqrt(num);
             bool isSquare = squareRoot % 1 == 0;
             return isSquare;
         }
 
-        public static long IncreaseNums(long num)
+        public static long IncreaseNums(long num) //Increases each digit in a number by 1
         {
             {
                 string numString = num.ToString();
@@ -31,7 +31,7 @@ namespace Rooter
             }
         }
 
-        public static void MainFunction(int x, long y)
+        public static void FindSquares(int x, long y) //Main code to find applicable numbers from x to y
         {
             Stopwatch watch = new Stopwatch();
             watch.Start();
